@@ -4,7 +4,7 @@ from fastmcp import Client
 
 
 async def main():
-    async with Client("http://localhost:8000/mcp") as client:
+    async with Client("http://192.168.0.6:8000/mcp") as client:
 
         # List available tools
         tools = await client.list_tools()
